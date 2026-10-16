@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    --bg-canvas: #F8F9FA;
+    --bg-card: #FFFFFF;
+    --bg-subtle: #F1F5F9;
+    --bg-obsidian: #0B1118;
+    --bg-obsidian-elevated: #111924;
+    --border-hairline: #E2E8F0;
+    --border-strong: #0F172A;
+    --accent-turf: #0A5C36;
+    --accent-clay: #C2410C;
+    --accent-gold: #D4A853;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #0F172A;
+    background-color: var(--bg-canvas);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  button, a, select, input {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 150ms;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 72;
+  letter-spacing: -0.02em;
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Single-Elevation Architectural Surfaces & Hairline Grids */
+.dossier-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+}
+
+.dossier-card-featured {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-top: 3px solid #0A5C36;
+}
+
+.dossier-grid-hairline {
+  background-color: #E2E8F0;
+  border: 1px solid #E2E8F0;
+}

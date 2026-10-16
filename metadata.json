@@ -1,0 +1,6 @@
+{
+  "name": "CourtEdge — Tennis Value Research & Daily Pick",
+  "description": "Quantitative tennis prediction research platform that compares reputable sources, evaluates implied vs. estimated win probabilities across pre-match and live markets, and tracks verified ROI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
